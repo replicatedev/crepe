@@ -1,0 +1,13 @@
+version: "0.1"
+name: crepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepe
+type: single_f0_estimation
+python_version: "3.7.5"
+python_dependencies:
+- tensorflow==1.15.0
+entrypoints:
+  setup: crepe.replicate:setup
+  infer: crepe.replicate:infer
+formats:
+  input: audio_path
+  output: melody_times_freqs
+test_set: medleydb_melody1
