@@ -1,6 +1,6 @@
 version: "0.1"
 name: crepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepe
-type: single_f0_estimation
+task: single_f0_estimation
 python_version: "3.7.5"
 python_dependencies:
 - tensorflow==1.15.0
