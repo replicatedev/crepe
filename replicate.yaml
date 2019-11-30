@@ -2,8 +2,9 @@ version: "0.1"
 name: crepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepecrepe
 task: single_f0_estimation
 python_version: "3.7.5"
-python_dependencies:
-- tensorflow==1.15.0
+install:
+  - pip install -r requirements.txt
+  - python setup.py install
 entrypoints:
   setup: crepe.replicate:setup
   infer: crepe.replicate:infer

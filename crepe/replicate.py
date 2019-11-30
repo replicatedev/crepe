@@ -6,9 +6,9 @@ def setup():
 
 def infer(audio_path):
     try:
-        sr, audio = wavfile.read(file)
+        sr, audio = wavfile.read(audio_path)
     except ValueError:
-        print("CREPE: Could not read %s" % file, file=sys.stderr)
+        print("CREPE: Could not read %s" % audio_path, file=sys.stderr)
         raise
     time, frequency, confidence, activation = predict(audio, sr, verbose=1)
     return time, frequency
