@@ -4,7 +4,7 @@ from .core import predict
 def setup():
     return
 
-def infer(audio_path):
+def infer(model, audio_path):
     try:
         sr, audio = wavfile.read(audio_path)
     except ValueError:
